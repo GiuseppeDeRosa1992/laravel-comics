@@ -9,11 +9,11 @@
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
-    <title>LARAVEL COMICS</title>
+    <title>COMICS</title>
 </head>
 
 <body>
-    <div class="text-center">
+    <div class="text-center px-2">
         {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         <h2 class="m-0">Nome: {{ $movie['title'] }}</h2>
         {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
