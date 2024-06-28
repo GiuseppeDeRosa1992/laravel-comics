@@ -14,9 +14,10 @@
 
 <body>
     <div class="text-center">
-        {{-- STAMPO SOLO IL PRIMO FILM --}}
-        <h1>QUI STAMPO SOLO IL PRIMO FILM</h1>
-        <p>PER IL CICLO CLICCA SU ABOUT <a href="/about">ABOUT</a></p>
+
+        {{-- INCLUDO L'HEADER --}}
+        @include('partials.header')
+
         {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         {{-- <h2 class="m-0">Nome: {{ $movies[0]['title'] }}</h2> --}}
         {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
