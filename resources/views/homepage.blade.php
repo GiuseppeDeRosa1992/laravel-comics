@@ -14,9 +14,13 @@
 
 <body>
     <div class="text-center">
+        {{-- VARIABILE TITOLO DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         <h1 class="m-0">{{ $titolo }}</h1>
+        {{-- VARIABILE NOME DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         <p>Nome: {{ $nome }}</p>
+        {{-- VARIABILE COGNOME DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         <p>Cognome: {{ $cognome }}</p>
+        {{-- VARIABILE CITTA DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
         <p>Squadra Tifata: {{ $città }}</p>
     </div>
 </body>

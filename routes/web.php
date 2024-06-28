@@ -15,21 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = [
-        "titolo" => "Le stringhe scelte sono:",
-        "nome" => "Giuseppe",
-        "cognome" => "De Rosa",
-        "città" => "Napoli"
-    ];
+    //RICHIAMO ARRAY ASSOCIATIVO DA STORE.PHP config("store") E LO METTO NELLA VARIABILE DATA
+    $data = config("store");
+    //CARICO LA VARIABILE DATA IN HOMEPAGE.BLADE.PHP 
     return view('homepage', $data);
 });
 
 Route::get('/home', function () {
-    $data = [
-        "titolo" => "Le stringhe scelte sono:",
-        "nome" => "Giuseppe",
-        "cognome" => "De Rosa",
-        "città" => "Napoli"
-    ];
+
+    $data = config("store");
     return view('homepage', $data);
 });
