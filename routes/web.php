@@ -14,9 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+
+    $data = [
+        "titolo" => "Le stringhe scelte sono:",
+        "nome" => "Giuseppe",
+        "cognome" => "De Rosa",
+        "città" => "Napoli"
+    ];
+    return view('homepage', $data);
 });
 
 Route::get('/home', function () {
-    return view('homepage');
+    $data = [
+        "titolo" => "Le stringhe scelte sono:",
+        "nome" => "Giuseppe",
+        "cognome" => "De Rosa",
+        "città" => "Napoli"
+    ];
+    return view('homepage', $data);
 });
