@@ -14,16 +14,18 @@
 
 <body>
     <div class="text-center px-2">
-        {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        <h2 class="m-0">Nome: {{ $movie['title'] }}</h2>
-        {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        <p>Descrizione: {{ $movie['description'] }}</p>
-        {{-- VARIABILE PRICE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        <p>Prezzo: {{ $movie['price'] }}</p>
-        {{-- VARIABILE SERIES DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        <p>Serie: {{ $movie['series'] }}</p>
-        {{-- VARIABILE TYPE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        <p>Data Di Uscita: {{ $movie['sale_date'] }}</p>
+        @foreach ($movies as $movie)
+            {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            <h2 class="m-0">Nome: {{ $movie['title'] }}</h2>
+            {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            <p>Descrizione: {{ $movie['description'] }}</p>
+            {{-- VARIABILE PRICE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            <p>Prezzo: {{ $movie['price'] }}</p>
+            {{-- VARIABILE SERIES DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            <p>Serie: {{ $movie['series'] }}</p>
+            {{-- VARIABILE TYPE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            <p>Data Di Uscita: {{ $movie['sale_date'] }}</p>
+        @endforeach
     </div>
 </body>
 
