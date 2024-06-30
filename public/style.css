@@ -1,4 +1,29 @@
+/* CSS RESET */
+
 body {
     background-color: black;
     color: white;
+}
+
+/* CSS UTILS */
+
+li {
+    list-style-type: none;
+}
+
+.my-h {
+    height: 20rem;
+}
+
+
+.jumbo {
+    background-image: url(/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* CSS FOOTER */
+.bg-image {
+    background-image: url(/footer-bg.jpg);
+    background-size: cover;
 }

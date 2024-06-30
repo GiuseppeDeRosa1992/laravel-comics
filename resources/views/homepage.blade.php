@@ -14,23 +14,28 @@
 
 <body>
     <div class="text-center">
+        <h1>QUI STAMPO SOLO IL PRIMO FILM</h1>
+        <p>Per altri film clicca i link
+            {{-- INCLUDO L'HEADER --}}
+            @include('partials.header')
 
-        {{-- INCLUDO L'HEADER --}}
-        @include('partials.header')
+            {{-- INCLUDO JUMBO --}}
+            @include('partials.jumbo')
 
-        {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        {{-- <h2 class="m-0">Nome: {{ $movies[0]['title'] }}</h2> --}}
-        {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        {{-- <p>Descrizione: {{ $movies[0]['description'] }}</p> --}}
-        {{-- VARIABILE PRICE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        {{-- <p>Prezzo: {{ $movies[0]['price'] }}</p> --}}
-        {{-- VARIABILE SERIES DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        {{-- <p>Serie: {{ $movies[0]['series'] }}</p> --}}
-        {{-- VARIABILE TYPE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
-        {{-- <p>Data Di Uscita: {{ $movies[0]['sale_date'] }}</p> --}}
 
-        {{-- STAMPO SOLO LA PRIMA CARD --}}
-        <div class="card mb-3 p-0">
+            {{-- VARIABILE TITLE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            {{-- <h2 class="m-0">Nome: {{ $movies[0]['title'] }}</h2> --}}
+            {{-- VARIABILE DESCRIPTION DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            {{-- <p>Descrizione: {{ $movies[0]['description'] }}</p> --}}
+            {{-- VARIABILE PRICE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            {{-- <p>Prezzo: {{ $movies[0]['price'] }}</p> --}}
+            {{-- VARIABILE SERIES DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            {{-- <p>Serie: {{ $movies[0]['series'] }}</p> --}}
+            {{-- VARIABILE TYPE DALL'ARRAY ASSOCIATIVO IN STORE.PHP --}}
+            {{-- <p>Data Di Uscita: {{ $movies[0]['sale_date'] }}</p> --}}
+
+            {{-- STAMPO SOLO LA PRIMA CARD --}}
+        <div class="card p-0">
             <div class="row g-0 m-0">
                 <div class="col-md-4">
                     <img src="{{ $movies[0]['thumb'] }}" class="w-100 rounded-start" alt="...">
@@ -48,6 +53,8 @@
                 </div>
             </div>
         </div>
+
+        @include('partials.footer')
     </div>
 </body>
 

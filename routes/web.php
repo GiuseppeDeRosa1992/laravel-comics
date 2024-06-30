@@ -28,8 +28,20 @@ Route::get('/home', function () {
     return view('homepage', $data);
 });
 
-Route::get('/about', function () {
+Route::get('/all', function () {
 
     $data = config("store");
     return view('about', $data);
+});
+
+Route::get('/comic-book', function () {
+
+    $data = config("store");
+    return view('comic', $data);
+});
+
+Route::get('/graphic-novel', function () {
+
+    $data = config("store");
+    return view('graphic', $data);
 });
