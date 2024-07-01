@@ -19,7 +19,7 @@ Route::get('/', function () {
     $array = config("store");
     //CARICO LA VARIABILE DATA IN HOMEPAGE.BLADE.PHP 
     return view('homepage', $array);
-});
+})->name("home"); //DO IL NOME ALLA ROTTA IN MODO CHE SE CAMBIA QUALCOSA NON DEVO ANDARE A CAMBAIRE IN OGNI PAGINA DOVE E DICHIARATA QUESTA ROTTA
 
 Route::get('/home', function () {
 
@@ -32,16 +32,16 @@ Route::get('/all', function () {
 
     $data = config("store");
     return view('about', $data);
-});
+})->name("all"); //DO IL NOME ALLA ROTTA IN MODO CHE SE CAMBIA QUALCOSA NON DEVO ANDARE A CAMBAIRE IN OGNI PAGINA DOVE E DICHIARATA QUESTA ROTTA
 
 Route::get('/comic-book', function () {
 
     $data = config("store");
     return view('comic', $data);
-});
+})->name("comics"); //DO IL NOME ALLA ROTTA IN MODO CHE SE CAMBIA QUALCOSA NON DEVO ANDARE A CAMBAIRE IN OGNI PAGINA DOVE E DICHIARATA QUESTA ROTTA
 
 Route::get('/graphic-novel', function () {
 
     $data = config("store");
     return view('graphic', $data);
-});
+})->name("graphics"); //DO IL NOME ALLA ROTTA IN MODO CHE SE CAMBIA QUALCOSA NON DEVO ANDARE A CAMBAIRE IN OGNI PAGINA DOVE E DICHIARATA QUESTA ROTTA
