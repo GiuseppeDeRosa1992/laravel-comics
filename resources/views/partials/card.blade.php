@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CARD</title>
-</head>
-
 <body>
     <div class="text-center px-2 row m-0">
         {{-- CICLO DENTRO MOVIES CHE STA DENTRO STORE.PHP --}}
@@ -20,13 +10,13 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Titolo: {{ $movie['title'] }}</h5>
-                                <p class="card-text">Descrizione: {{ $movie['description'] }}</p>
-                                <p class="card-text">Prezzo: {{ $movie['price'] }}</p>
-                                <p class="card-text">Serie: {{ $movie['series'] }}</p>
-                                <p class="card-text">Genere: {{ $movie['type'] }}</p>
-                                <p class="card-text"><small class="text-muted">Data Di Uscita:
-                                        {{ $movie['sale_date'] }}</small></p>
+                                <h5 class="card-title"><b>Titolo:</b> {{ $movie['title'] }}</h5>
+                                <p class="card-text"><b>Descrizione:</b> {{ $movie['description'] }}</p>
+                                <p class="card-text"><b>Prezzo:</b> {{ $movie['price'] }}</p>
+                                <p class="card-text"><b>Serie:</b> {{ $movie['series'] }}</p>
+                                <p class="card-text"><b>Genere:</b> {{ $movie['type'] }}</p>
+                                <p class="card-text"><b>Data Di Uscita:</b>
+                                    {{ $movie['sale_date'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -45,5 +35,3 @@
         @endforeach
     </div>
 </body>
-
-</html>

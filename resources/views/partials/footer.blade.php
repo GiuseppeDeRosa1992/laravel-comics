@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FOOTER</title>
-</head>
-
 <body>
     <div id="footer-center" class="bg-image">
         <div class="container row m-auto p-0 justify-content-between">
@@ -42,5 +32,3 @@
         </div>
     </div>
 </body>
-
-</html>

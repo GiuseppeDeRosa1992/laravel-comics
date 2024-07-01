@@ -42,13 +42,13 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Titolo: {{ $movies[0]['title'] }}</h5>
-                        <p class="card-text">Descrizione: {{ $movies[0]['description'] }}</p>
-                        <p class="card-text">Prezzo: {{ $movies[0]['price'] }}</p>
-                        <p class="card-text">Serie: {{ $movies[0]['series'] }}</p>
-                        <p class="card-text">Genere: {{ $movies[0]['type'] }}</p>
-                        <p class="card-text"><small class="text-muted">Data Di Uscita:
-                                {{ $movies[0]['sale_date'] }}</small></p>
+                        <h5 class="card-title"><b>Titolo:</b> {{ $movies[0]['title'] }}</h5>
+                        <p class="card-text"><b>Descrizione:</b> {{ $movies[0]['description'] }}</p>
+                        <p class="card-text"><b>Prezzo:</b> {{ $movies[0]['price'] }}</p>
+                        <p class="card-text"><b>Serie:</b> {{ $movies[0]['series'] }}</p>
+                        <p class="card-text"><b>Genere:</b> {{ $movies[0]['type'] }}</p>
+                        <p class="card-text"><b>Data Di Uscita:</b>
+                            {{ $movies[0]['sale_date'] }}</p>
                     </div>
                 </div>
             </div>
