@@ -1,4 +1,4 @@
-<body>
+<footer class="mt-3">
     <div id="footer-center" class="bg-image">
         <div class="container row m-auto p-0 justify-content-between">
             <div class="col-12 col-sm-4 p-2">
@@ -31,4 +31,4 @@
             </div>
         </div>
     </div>
-</body>
+</footer>

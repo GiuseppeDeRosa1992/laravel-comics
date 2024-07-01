@@ -1,4 +1,4 @@
-<body>
+<section>
     <div class="jumbo my-h">
     </div>
-</body>
+</section>
