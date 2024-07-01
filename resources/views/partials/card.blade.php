@@ -18,7 +18,7 @@
                                     <p class="card-text"><b>Genere:</b> {{ $movie['type'] }}</p>
                                     <p class="card-text"><b>Data Di Uscita:</b>
                                         {{ $movie['sale_date'] }}</p>
-                                    <a href="/all/{{ $key }}">
+                                    <a href="{{ route('details', ['indice' => $key]) }}">
                                         <button type="button" class="btn btn-outline-primary">DETTAGLI FILM</button>
                                     </a>
                                 </div>
