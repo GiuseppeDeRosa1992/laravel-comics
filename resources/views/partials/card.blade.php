@@ -2,7 +2,7 @@
     <section>
         <div class="text-center px-2 row m-0">
             {{-- CICLO DENTRO MOVIES CHE STA DENTRO STORE.PHP --}}
-            @foreach ($movies as $movie)
+            @foreach ($movies as $key => $movie)
                 <div class="col-4 mt-3">
                     <div class="card p-0 h-100">
                         <div class="row g-0 m-0">
@@ -18,6 +18,9 @@
                                     <p class="card-text"><b>Genere:</b> {{ $movie['type'] }}</p>
                                     <p class="card-text"><b>Data Di Uscita:</b>
                                         {{ $movie['sale_date'] }}</p>
+                                    <a href="/all/{{ $key }}">
+                                        <button type="button" class="btn btn-outline-primary">DETTAGLI FILM</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

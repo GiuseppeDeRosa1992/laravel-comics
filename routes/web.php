@@ -45,3 +45,16 @@ Route::get('/graphic-novel', function () {
     $data = config("store");
     return view('graphic', $data);
 })->name("graphics"); //DO IL NOME ALLA ROTTA IN MODO CHE SE CAMBIA QUALCOSA NON DEVO ANDARE A CAMBAIRE IN OGNI PAGINA DOVE E DICHIARATA QUESTA ROTTA
+
+// ROTTA PER STAMPARE LA CARD DI UN SINGOLO FILM CHE PRENDO DALLA LISTA COMPLETA DI FILM TRAMITEL'INDICE
+Route::get('/all/{indice}', function ($indice) {
+    $movies = config("store.movies");
+    if ($indice >= 0 && $indice <= count($movies)) {
+        $data = [
+            "movie" => $movies[$indice]
+        ];
+        return view('details-movie', $data);
+    } else {
+        return abort(404);
+    };
+})->name("details");
