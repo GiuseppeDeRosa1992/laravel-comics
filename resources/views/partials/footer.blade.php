@@ -5,22 +5,22 @@
                 <h3 class="m-0 fs-5">MOVIES</h3>
                 <ul class="m-0 p-0">
                     <li class="p-0 my-fs">
-                        <a class="text-decoration-none hover" href="/">
+                        <a class="text-decoration-none hover" href="{{ route('home') }}">
                             <b>Home Page</b>
                         </a>
                     </li>
                     <li class="p-0 my-fs">
-                        <a class="text-decoration-none hover" href="/all">
+                        <a class="text-decoration-none hover" href="{{ route('all') }}">
                             <b>All Movie</b>
                         </a>
                     </li>
                     <li class="p-0 my-fs">
-                        <a class="text-decoration-none hover" href="/comic-book">
+                        <a class="text-decoration-none hover" href="{{ route('comics') }}">
                             <b>Comic Book Movie</b>
                         </a>
                     </li>
                     <li class="p-0 my-fs">
-                        <a class="text-decoration-none hover" href="/graphic-novel">
+                        <a class="text-decoration-none hover" href="{{ route('graphics') }}">
                             <b>Graphic Novel Movie</b>
                         </a>
                     </li>
